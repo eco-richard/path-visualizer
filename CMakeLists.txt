@@ -15,11 +15,11 @@ project(
 
 find_package(raylib CONFIG REQUIRED)
 
-add_executable(main src/main.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp)
 
 add_subdirectory(test)
 
-target_link_libraries(main
+target_link_libraries(${PROJECT_NAME}
   PRIVATE
   raylib)
 
