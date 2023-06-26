@@ -6,6 +6,9 @@ set(CMAKE_CXX_STANDARD 20)
 # Require C++ Standard
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Export compile commands (gives autocomplete for neovim(I use neovim btw))
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Project name and language
 project(
   path-visualizer
@@ -16,6 +19,8 @@ project(
 find_package(raylib CONFIG REQUIRED)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
+
+enable_testing()
 
 add_subdirectory(test)
 
