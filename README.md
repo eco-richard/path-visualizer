@@ -1,5 +1,7 @@
 # Path Visualizer
 
+WIP
+
 A minimal pathfinder visualizer using C++ and [raylib](https://www.raylib.com/).
 
 ## Building 
