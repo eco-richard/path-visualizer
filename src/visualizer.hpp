@@ -7,17 +7,15 @@
 
 class Visualizer {
   public:
-    Visualizer();
     static void Init(uint32_t sw, uint32_t sh, uint32_t gs);
-    static void DrawGrid();
-    static void Loop();
-
-    ~Visualizer();
-    
+    static void Draw();
+    static void Update();
+    static void Close();
+  
   private:
-    const uint32_t _screen_width;
-    const uint32_t _screen_height;
-    const uint32_t _grid_size;
+    static uint32_t _screen_width;
+    static uint32_t _screen_height;
+    static uint32_t _grid_size;
 
     const Color _start_color = GREEN;
     const Color _end_color = RED;

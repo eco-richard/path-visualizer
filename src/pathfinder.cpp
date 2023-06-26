@@ -39,7 +39,7 @@ void Pathfinder::wall(int row, int col) {
  
   if (_grid[row][col].is_start || _grid[row][col].is_end) return;
 
-  _grid[row][col].is_wall = !_grid[row][col].is_wall;
+  _grid[row][col].is_wall = true;// !_grid[row][col].is_wall;
 }
 
 void Pathfinder::Dijkstras() {
